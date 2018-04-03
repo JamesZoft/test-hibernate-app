@@ -5,7 +5,7 @@ import org.hibernate.annotations.Where;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "ttestentity")
+@Table(name = "testentity")
 @Where(clause = "name IS NOT NULL")
 public class TestEntity {
 	@Id

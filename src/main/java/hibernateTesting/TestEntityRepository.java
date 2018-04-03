@@ -18,7 +18,7 @@ public class TestEntityRepository {
 	public List<TestEntity> list() {
 		Session session = sessionFactory.openSession();
 		Transaction t = session.beginTransaction();
-//		List<TestEntity> list = session.createNativeQuery("select e.* from ttestentity e", TestEntity.class)
+//		List<TestEntity> list = session.createNativeQuery("select e.* from testentity e", TestEntity.class)
 //			.addEntity("e", TestEntity.class).list();
 		List<TestEntity> list = session.createQuery("select e from TestEntity e", TestEntity.class).list();
 		t.commit();
